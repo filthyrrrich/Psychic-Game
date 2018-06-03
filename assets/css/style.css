@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    background: white;
+}
+h2 {
+    background: orange;
+    text-align: center;
+}
+header h1 {
+    color: green;
+    text-align: center;
+}
+body {
+    background: aqua;
+}
+.scoreboard {
+    float: left;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    border: 5px solid white;
+    width: 200px;
+    background: green;
+}
+.badge {
+    
+    background: red;
+    color: white;
+}
+p {
+    color: white;
+    font-size: 30px;
+}
+.guess-left {
+    width: 200px;
+    height: 174px;
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    border: 5px solid white;
+    float: left;
+    background: red;
+}
+.sofar {
+    height: 174px;
+    width: 300px;
+    margin: 20px;
+    float: left;
+    padding: 10px 10px;
+    text-align: center;
+    border: 5px solid white;
+    background: red;
+}
