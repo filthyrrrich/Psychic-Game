@@ -9,11 +9,14 @@
     </head>
     
     <body>
+        
         <header>
-            <h1>The Psychic Game</h1> 
+            <h1 id="htag">Psychic Game</h1> 
         </header>
+        
+        <div class="container">
         <div class="instruct">
-                <h2>Guess what letter I'm thinking of.</h2>
+                <h2>Guess what letter I'm thinking of</h2>
         </div>
         <div class="scoreboard">
             <div id="win-score" class="badge">Wins</div>
@@ -23,15 +26,16 @@
         </div>
 
         <div class="guess-left">
-                <p>Guesses Left:</p>
-                <span id="current-guesses">10</span>   
+                <p>Guesses <br> Left:</p>
+                <span id="current-guesses">9</span>   
         </div>
 
         <div class="sofar">
-                <p>Your Guesses so far:</p>
+                <p>Letters Guessed so far:</p>
                 <span id="past-guesses"></span>
         </div>
-
+    </div>
         <script src="assets/javascript/game.js" charset="UTF-8"></script>
+        <footer>&copy; 2018 RICH SCHIFFER</footer>
     </body>
 </html>

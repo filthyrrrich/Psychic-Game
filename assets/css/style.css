@@ -3,59 +3,107 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.container {
+    overflow: hidden;
+    position: relative;
+    border: solid 3px #c7d2f5;
+    border-radius: 50%;
+    padding:30px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width:  550px;
+    background-color: #070101d6;
+}
 header {
-    padding: 20px;
-    background: white;
+    color: white;
+    background-color: black;
+    border-bottom: solid 5px rgb(0, 173, 255);
+    padding: 40px;
+    background-image: url(/Users/richschiffer/Desktop/code/Psychic-Game/assets/images/sunburst.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
 }
+
 h2 {
-    background: orange;
+    margin-top: 30px;
+    background: rgba(244, 191, 67, 0.934);
     text-align: center;
 }
-header h1 {
-    color: green;
+h1 {
+    color: black;
     text-align: center;
+    
+    
 }
 body {
-    background: aqua;
+   
+    background-size: cover;
+    background-image: url(/Users/richschiffer/Desktop/code/Psychic-Game/assets/images/psychic-ability.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .scoreboard {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
     float: left;
     padding: 10px 10px;
     text-align: center;
     font-size: 30px;
     margin: 20px;
-    border: 5px solid white;
+    border: 5px solid #c7d2f5;
     width: 200px;
-    background: green;
+    background: rgb(0, 173, 255);
 }
 .badge {
-    
-    background: red;
     color: white;
 }
 p {
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: white;
     font-size: 30px;
 }
 .guess-left {
     width: 200px;
-    height: 174px;
-    font-size: 30px;
+    height: 220px;
     margin: 20px;
     padding: 10px 10px;
     text-align: center;
-    border: 5px solid white;
+    border: 5px solid #c7d2f5;
+    border-radius: 50%;
     float: left;
-    background: red;
+    background: rgb(0, 173, 255);
 }
 .sofar {
-    height: 174px;
-    width: 300px;
     margin: 20px;
+    margin-left: 70px;  
+    height: 174px;
+    width: 350px;   
     float: left;
     padding: 10px 10px;
     text-align: center;
-    border: 5px solid white;
-    background: red;
+    border: 5px solid #c7d2f5;
+    border-radius: 30%;
+    background: rgb(0, 173, 255);
+}
+span {
+    font-size: 50px;
+}
+#past-guesses {
+    font-size: 40px;
+}
+footer {
+    text-align: center;
+    color: #cccccc87;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    border-top: solid 5px rgb(0, 173, 255);
+    padding: 20px;
+    background: rgb(0, 0, 0);
 }
