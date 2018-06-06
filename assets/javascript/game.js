@@ -23,10 +23,10 @@ function nextGame (){
 // allows user to press a letter to make a guess
 document.onkeyup = function(event) {
     var guess = event.key.toLowerCase();
-    var alreadyUsedGuess = userGuess.includes(" " + guess);
+    var repeatGuess = userGuess.includes(" " + guess);
     
     //alert user on repeat guesses
-    if (alreadyUsedGuess == true) {
+    if (repeatGuess == true) {
         alert("You already guessed that letter... you might want to try a different one!");
 
     //alert user if they make an invalid guess
@@ -54,11 +54,11 @@ document.onkeyup = function(event) {
             guessLeft_span.innerHTML--;
             lives--;
         }
-        console.log(guess)
+        
     }
 
 }
-console.log(mysteryLetter);
+
 
 
 

@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-   
     <head>
         <meta charset="UTF-8">
         <title>Psychic Game</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
-    
     <body>
-        
         <header>
-            <h1 id="htag">Psychic Game</h1> 
+            <h1>Psychic Game</h1> 
         </header>
-        
         <div class="container">
-        <div class="instruct">
+            <div class="instruct">
                 <h2>Guess what letter I'm thinking of</h2>
-        </div>
-        <div class="scoreboard">
-            <div id="win-score" class="badge">Wins</div>
+            </div>
+            <div class="scoreboard">
+                <div class="badge">Wins</div>
                 <span id="winstotal">0</span>
-            <div id="loss-score" class="badge">Losses</div>
+                <div class="badge">Losses</div>
                 <span id="losstotal">0</span>
-        </div>
-
-        <div class="guess-left">
+            </div>
+            <div class="guess-left">
                 <p>Guesses <br> Left:</p>
                 <span id="current-guesses">9</span>   
-        </div>
-
-        <div class="sofar">
+            </div>
+            <div class="sofar">
                 <p>Letters Guessed so far:</p>
                 <span id="past-guesses"></span>
+            </div>
         </div>
-    </div>
         <script src="assets/javascript/game.js" charset="UTF-8"></script>
         <footer>&copy; 2018 RICH SCHIFFER</footer>
     </body>
