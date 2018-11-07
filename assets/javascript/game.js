@@ -2,12 +2,17 @@ var wins = 0;
 var losses = 0;
 var userGuess = [];
 var lives = 9;
+
+// shortcuts for getting elements
 var win_span = document.getElementById("winstotal");
 var loss_span = document.getElementById("losstotal");
 var guessLeft_span = document.getElementById("current-guesses");
 var sofar_span = document.getElementById("past-guesses");
 
+// array for letter guesses
 var letterArray = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" ];
+
+// randomly chooses from letterArray
 var mysteryLetter = letterArray[Math.floor(Math.random() * letterArray.length)];
 
 // resets the game while keeping track of wins/losses
@@ -21,8 +26,8 @@ function nextGame (){
 }
 
 // allows user to press a letter to make a guess
-document.onkeyup = function(event) {
-    var guess = event.key.toLowerCase();
+document.getElementById("keyboard").onclick = function(event) {
+    var guess = event.target.id.toLowerCase();
     var repeatGuess = userGuess.includes(" " + guess);
     
     //alert user on repeat guesses
@@ -43,7 +48,7 @@ document.onkeyup = function(event) {
             nextGame();
 
         // lose condition      
-        } else if(lives <= 1) {
+        } else if (lives <= 1) {
             alert("You lose. Better luck next time!");
             loss_span.innerHTML++;
             nextGame();
